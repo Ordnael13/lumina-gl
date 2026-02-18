@@ -62,7 +62,7 @@ export default function Scene() {
 
 
   const texture = useTexture(
-    "https://plus.unsplash.com/premium_photo-1748350571808-31ce5c88c5d8?w=600&auto=format&fit=crop&q=60"
+    "/shader-img/rgb-displacement.jpeg"
   );
 
 
@@ -110,7 +110,7 @@ export default function Scene() {
       onPointerOver={() => setHover(true)}
       onPointerOut={() => setHover(false)}
     >
-      <planeGeometry args={[1.5, 1.5, isMobile ? 32 : 64, isMobile ? 32 : 64]} />
+      <planeGeometry args={[1.6, 1.7, isMobile ? 32 : 64, isMobile ? 32 : 64]} />
       <imageFadeMaterial uTexture={texture} transparent />
     </mesh>
   );

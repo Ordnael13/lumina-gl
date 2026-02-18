@@ -43,15 +43,13 @@ export default function Scene() {
   const { camera, viewport } = useThree();
   const isMobile = viewport.width < 6;
 
-  /* ---------------- Camera ---------------- */
   useEffect(() => {
     camera.position.set(0, 0, isMobile ? 11 : 7.5);
     camera.lookAt(0, 0, 0);
   }, [camera, isMobile]);
 
-  /* ---------------- Texture ---------------- */
   const texture = useTexture(
-    "https://plus.unsplash.com/premium_photo-1677178660876-8578f4f6cbac?w=600&auto=format&fit=crop&q=60"
+    "/shader-img/spectral-echo.jpeg"
   );
 
   useEffect(() => {

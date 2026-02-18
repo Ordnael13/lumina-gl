@@ -9,11 +9,11 @@
 
 **A curated laboratory of high-end image distortion techniques, exploring the boundaries of Chromatic Aberration, Fluid Dynamics, and Kinetic Momentum.**
 
-[ [LAUNCH EXPERIENCE](https://your-link.vercel.app/) ] &nbsp; • &nbsp; [ [RESOURCES](https://github.com/sujitkoji/chroma-lens-gallery) ]
+[ [LAUNCH GALLERY](https://chroma-gallery.vercel.app/) ] &nbsp; • &nbsp; [ [SOURCE CODE](https://github.com/sujitkoji/chroma-lens-gallery) ]
 
 <br/>
 
-![Header](https://github.com/sujitkoji/chroma-lens-gallery/blob/main/public/preview.png?raw=true)
+![Header](https://github.com/sujitkoji/chroma-lens-gallery/blob/main/public/chroma-lens-gallery.png?raw=true)
 
 ---
 
@@ -25,21 +25,75 @@ By offloading complex pixel-sorting and RGB shifting to custom **GLSL Fragment S
 
 ---
 
-### / SHADER MODULES
+### / LIVE EXPERIMENTS
 
-<table width="100%" style="border-collapse: collapse;">
+<table width="100%" style="border-collapse: collapse; text-align: center;">
+  <tr style="background: #0a0a0a;">
+    <th style="border: 1px solid #1a1a1a; padding: 15px;">MODULE</th>
+    <th style="border: 1px solid #1a1a1a; padding: 15px;">TECHNICAL FOCUS</th>
+    <th style="border: 1px solid #1a1a1a; padding: 15px;">DIRECT LINK</th>
+  </tr>
+
   <tr>
-    <td width="50%" align="center" style="border: 1px solid #1a1a1a; padding: 25px; background: #050505;">
-      <code>EXP 01</code><br/><br/>
-      <b style="letter-spacing: 0.2em;">SPECTRAL ECHO</b><br/>
-      <i>Refractive displacement with smooth step magnification.</i>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <b>EXP 01 // Liquid Art Wave</b>
     </td>
-    <td width="50%" align="center" style="border: 1px solid #1a1a1a; padding: 25px; background: #050505;">
-      <code>EXP 02</code><br/><br/>
-      <b style="letter-spacing: 0.2em;">KINETIC LENS</b><br/>
-      <i>Velocity-based RGB ghosting and procedural noise grain.</i>
+    <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
+      Refractive displacement & smooth step magnification.
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <a href="https://chroma-gallery.vercel.app/lab/liquid-art-wave"><b>[ VIEW DEMO ]</b></a>
     </td>
   </tr>
+
+  <tr>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <b>EXP 02 // RGB Displacement</b>
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
+      Velocity-based RGB ghosting & procedural noise.
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <a href="https://chroma-gallery.vercel.app/lab/rgb-displacement"><b>[ VIEW DEMO ]</b></a>
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <b>EXP 03 // Spectral Echo</b>
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
+      Velocity-based RGB ghosting & procedural noise.
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <a href="https://chroma-gallery.vercel.app/lab/spectral-echo"><b>[ VIEW DEMO ]</b></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <b>EXP 04 // Image Alchemy</b>
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
+      Velocity-based RGB ghosting & procedural noise.
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <a href="https://chroma-gallery.vercel.app/lab/image-alchemy"><b>[ VIEW DEMO ]</b></a>
+    </td>
+  </tr>
+
+   <tr>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <b>EXP 05 // Elegance</b>
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
+      Velocity-based RGB ghosting & procedural noise.
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <a href="https://chroma-gallery.vercel.app/lab/elegance"><b>[ VIEW DEMO ]</b></a>
+    </td>
+  </tr>
+   
 </table>
 
 ---
@@ -52,7 +106,9 @@ The system calculates the Euclidean distance between mouse coordinates across fr
 $$\text{Velocity} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 
 #### // OPTICAL ABERRATION
-The distortion is achieved by sampling the texture three times with a progressive offset, simulating the way a physical lens fails to focus all colors to the same point.
+The distortion is achieved by sampling the texture three times with a progressive offset, simulating the way a physical lens fails to focus all colors to the same point. 
+
+
 
 ---
 

@@ -1,11 +1,17 @@
 import React from 'react'
+import Footer from "../app/home/footer"
+import Navbar from "../app/home/navbar"
+import Home from "./home/hero"
 
-export default function Homepage() {
+export default function page() {
   return (
-    <main className='h-screen w-screen flex justify-center items-center'>
-     <div className='text-3xl'>Welcome</div>
+    <main>
+      <Navbar/>
+      <Home/>
+      <Footer/>
     </main>
   )
 }
 
- 
+
+

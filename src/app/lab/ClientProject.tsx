@@ -2,15 +2,15 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
-import type { Project } from "@/app/lib/projectData";
+import type { Lab } from "@/app/lib/projectData";
 import type { ComponentType } from "react";
 
-interface ClientProjectProps {
-  project: Project;           
+interface ClientLabProps {
+  lab: Lab;           
   Component: ComponentType;    
 }
 
-export default function ClientProject({ Component }: ClientProjectProps) {
+export default function ClientLab({ Component }: ClientLabProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

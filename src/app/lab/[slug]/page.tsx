@@ -2,18 +2,18 @@ import { notFound } from "next/navigation";
 import { projects } from "@/app/lib/projectData";
 import type { Metadata } from "next";
 import type { ComponentType } from "react";
-import ClientProject from "@/app/projects/ClientProject";
+import ClientLab from "@/app/lab/ClientProject";
 
-interface ProjectPageProps {
+interface LabPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: LabPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const project = projects.find((p) => p.slug === slug);
+  const lab = projects.find((p) => p.slug === slug);
 
   // 🧩 If project not found
-  if (!project) {
+  if (!lab) {
     return {
       title: "Project Not Found | SujitKoji",
       description:
@@ -26,9 +26,9 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   }
 
   // 🧠 Dynamic SEO values
-  const siteUrl = `https://sujitkoji.vercel.app/projects/${project.slug}`;
-  const siteImage = project.preview || "https://sujitkoji.vercel.app/og/default-og.jpg";
-  const siteTitle = `${project.title} | SujitKoji`;
+  const siteUrl = `https://sujitkoji.vercel.app/lab/${lab.slug}`;
+  const siteImage = lab.preview || "https://sujitkoji.vercel.app/og/default-og.jpg";
+  const siteTitle = `${lab.title} | SujitKoji`;
 
   // 🚀 SEO-optimized metadata (fixed kebab-case keys)
   return {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
           url: siteImage,
           width: 1200,
           height: 630,
-          alt: `${project.title} | sujitkoji`,
+          alt: `${lab.title} | sujitkoji`,
         },
       ],
     },
@@ -86,12 +86,12 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   };
 }
 
-export default async function ProjectPage({ params }: ProjectPageProps) {
+export default async function LabPage({ params }: LabPageProps) {
   const { slug } = await params;
-  const project = projects.find((p) => p.slug === slug);
+  const lab = projects.find((p) => p.slug === slug);
 
-  if (!project) return notFound();
+  if (!lab) return notFound();
 
-  const Component = project.component as ComponentType;
-  return <ClientProject project={project} Component={Component} />;
+  const Component = lab.component as ComponentType;
+  return <ClientLab lab={lab} Component={Component} />;
 }
