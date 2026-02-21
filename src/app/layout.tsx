@@ -3,7 +3,6 @@ import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-
 const sora = Sora({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -29,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="theme-color" content="#000000" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/logo/web-app-manifest-192x192-sm.png" />
+        <link rel="apple-touch-icon" href="/web-app-manifest-192x192.png" />
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
 
