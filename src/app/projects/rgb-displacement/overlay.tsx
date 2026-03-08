@@ -64,7 +64,7 @@ export default function Overlay() {
         <p className="text-[9px] md:text-[11px] font-black tracking-[0.2em] md:tracking-[0.3em]">FLORAL.STUDIO</p>
       </motion.div>
 
-      {/* 🧭 Top Right - Local Time - Hidden on very small devices if needed, or scaled down */}
+      
       <motion.div variants={fadeUp} className="absolute top-6 md:top-10 right-5 md:right-10 text-right">
         <p className="font-mono text-[8px] md:text-[10px] tracking-widest opacity-60">
           {time || "00:00:00"}

@@ -6,8 +6,14 @@ export type project = {
 
 export const projects: project[] = [
 
+  
   {
     id: "01",
+    title: "Liquid Art Wave",
+    path: "/lab/liquid-art-wave",
+  },
+  {
+    id: "02",
     title: "RGB-Displacement",
     path: "/lab/rgb-displacement",
   }

@@ -9,7 +9,7 @@
 
 **A curated laboratory of high-end image distortion techniques, exploring the boundaries of Chromatic Aberration, Fluid Dynamics, and Kinetic Momentum.**
 
-[ [LAUNCH GALLERY](https://lumina-gl.sujitkoji.com/) ] &nbsp; • &nbsp; [ [SOURCE CODE](https://github.com/sujitkoji/chroma-lens-gallery) ]
+[ [LAUNCH GALLERY](https://lumina-gl.sujitkoji.com/) ] &nbsp; • &nbsp; [ [SOURCE CODE](https://github.com/sujitkoji/lumina-gl) ]
 
 <br/>
 
@@ -34,9 +34,21 @@ By offloading complex pixel-sorting and RGB shifting to custom **GLSL Fragment S
     <th style="border: 1px solid #1a1a1a; padding: 15px;">DIRECT LINK</th>
   </tr>
 
+   <tr>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <b>EXP 01 // Liquid Art Wave</b>
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
+      Fluid Dynamics & Refractive Shaders.
+    </td>
+    <td style="border: 1px solid #1a1a1a; padding: 20px;">
+      <a href="https://lumina-gl.sujitkoji.com/lab/liquid-art-wave"><b>[ VIEW DEMO ]</b></a>
+    </td>
+  </tr>
+
   <tr>
     <td style="border: 1px solid #1a1a1a; padding: 20px;">
-      <b>EXP 01 // RGB Displacement</b>
+      <b>EXP 02 // RGB Displacement</b>
     </td>
     <td style="border: 1px solid #1a1a1a; padding: 20px; color: #888;">
       Velocity-based RGB ghosting & procedural noise.
@@ -77,7 +89,7 @@ The distortion is achieved by sampling the texture three times with a progressiv
  │  ├─ scene.tsx          <span style="color: #444;">// Refractive Mesh</span>
  │  └─ shaders/           <span style="color: #444;">// Static Refraction GLSL</span>
  │
- ├─ <span style="color: #fff;">KineticLens/</span>
+ ├─ <span style="color: #fff;">Liquid-Art-Wave/</span>
  │  ├─ scene.tsx          <span style="color: #444;">// Velocity Logic</span>
  │  └─ shaders/           <span style="color: #444;">// RGB Shift GLSL</span>
  │

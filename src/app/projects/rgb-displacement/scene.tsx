@@ -9,20 +9,20 @@ export default function Scene() {
     return (
         <>
             <Canvas
-              camera={{ position: [0, 4, 2], far: 50 }}
-                    style={{ width: "100vw", height: "100vh" }}
-                    dpr={[1, 2]}
-                    gl={{
-                      antialias: true,
-                      powerPreference: "high-performance",
-                      alpha: false,
-                      stencil: false,
-                      depth: true,
-                    }}
-                    onCreated={({ gl }) => {
-                      gl.outputColorSpace = THREE.SRGBColorSpace;
-                      gl.toneMapping = THREE.ACESFilmicToneMapping;
-                    }}
+                camera={{ position: [0, 4, 2], far: 50 }}
+                style={{ width: "100vw", height: "100vh" }}
+                dpr={[1, 2]}
+                gl={{
+                    antialias: true,
+                    powerPreference: "high-performance",
+                    alpha: false,
+                    stencil: false,
+                    depth: true,
+                }}
+                onCreated={({ gl }) => {
+                    gl.outputColorSpace = THREE.SRGBColorSpace;
+                    gl.toneMapping = THREE.ACESFilmicToneMapping;
+                }}
             >
                 <Suspense fallback={null}>
                     <ShaderMesh />
